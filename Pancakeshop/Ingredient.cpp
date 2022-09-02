@@ -1,145 +1,93 @@
+#include "Ingredient.h"
 
-#include"all.h"
-
-class Ing
-{
-public:
-	 double price;
-	string name;
-	double cost;
-public:
-	void Data(string name_val, double price_val,double cost_val)
+	void Ing::Data(string name_val, double price_val,double cost_val)
 	{
 		name_val=name;
         cost_val=cost;
 	    price_val=price;
 	}
-};//ingredient配料类，价格、名称
-class  Necessary :public Ing//煎饼必须要的配料
-{
-public:
-	Necessary()
+	Necessary::Necessary()
 	{
 		 name = "煎饼鸡蛋";
 		  price = 5;
 		  cost = 2;
 	}
 
-};
-class Free :public Ing//免费配料
-{public:
-	void Fr()
+	void Free:: Fr()
 	{
 		 price = 0;
 	}
-};
-class Huotui :public Ing {
-public:
-	Huotui()
+	Huotui::Huotui()
 	{
 		  name = "火腿";
 		  price = 2;
 		  cost= 1;
 	}
-};
-class Youtiao :public Ing {
-public:
-	Youtiao()
+	Youtiao::Youtiao()
 	{
 		  name = "油条";
 		 price = 1;
 		 cost = 0.5;
 	}
-};
-class Cuibing :public Ing {
-public:
-	Cuibing()
+	Cuibing::Cuibing()
 	{
 		 name = "脆饼";
 		 price = 1.5;
 		 cost = 0.5;
 	}
-};
-class Tudousi :public Ing {
-public:
-	Tudousi()
+	Tudousi::Tudousi()
 	{
 		 name = "土豆丝";
 		 price = 1;
 		  cost= 0.5;
 	}
-};
-class Haidaisi :public Ing {
-public:
-	Haidaisi()
+	Haidaisi::Haidaisi()
 	{
 		  name = "海带丝";
 		  price = 1;
 		  cost = 0.5;
 	};
-};
-class Huluobosi :public Ing {
-public:
-	 Huluobosi()
+	Huluobosi:: Huluobosi()
 	{
 		  name= "胡萝卜丝";
 		  price = 1;
 		  cost = 0.5;
 	};
-};
-class Douya :public Ing {
-public:
-	Douya()
+	Douya::Douya()
 	{
 		  name= "豆芽";
 		  price = 1;
 		 cost = 0.5;
 	};
-};
-class Liji :public Ing {
-public:
-	Liji()
+	Liji::Liji()
 	{
 	  name = "里脊";
 	 price = 3;
 	 cost = 1.5;
 	}
-};
-class Jiang :public Free {
-public:
-	Jiang()
+	Jiang::Jiang()
 	{
 		 name = "酱";
 	  cost = 0.1;
 	}
-};
-class Xiangcai :public Free {
-public:
-
-	Xiangcai()
+	Xiangcai::Xiangcai()
 	{
 		 name = "香菜";
 
 		 cost = 0.1;
 
 	}
-};
-class Cong :public Free {
-public:
-	Cong()
+	Cong::Cong()
 	{
 		name = "葱";
 		cost = 0.1;
 	}
 
-};
-class Lajiao :public Free {public:
-	Lajiao()
+		Lajiao::Lajiao()
 	{
 		string name = "辣椒";
 		double cost = 0.1;
 	}
-};
 double IngC(string C)
 {
 	if (C == "火腿") {

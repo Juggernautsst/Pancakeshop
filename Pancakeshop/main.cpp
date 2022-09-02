@@ -1,5 +1,4 @@
 #include"all.h"
-#include"Ingredient.cpp"
 
 class Pancake
 {protected:
